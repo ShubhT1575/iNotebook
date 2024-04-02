@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+// const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
-const mongoURI = "mongodb://localhost:27017/inotebook?readPreference=primary&directConnection=true&tls=false"
+const mongoURI = "mongodb+srv://st9889394838:bTdzxJ1bsYJRyCaD@inotebook.grrntkz.mongodb.net/?retryWrites=true&w=majority&appName=iNotebook"
 
 const connectToMongo = async ()=>{
     await mongoose.connect(mongoURI);
